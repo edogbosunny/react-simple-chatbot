@@ -119,10 +119,10 @@ class ChatBot extends Component {
 
     this.supportsScrollBehavior = 'scrollBehavior' in document.documentElement.style;
 
-    if (this.content) {
-      this.content.addEventListener('DOMNodeInserted', this.onNodeInserted);
-      window.addEventListener('resize', this.onResize);
-    }
+    // if (this.content) {
+    //   this.content.addEventListener('DOMNodeInserted', this.onNodeInserted);
+    //   window.addEventListener('resize', this.onResize);
+    // }
 
     const { currentStep, previousStep, previousSteps, renderedSteps } = storage.getData(
       {
