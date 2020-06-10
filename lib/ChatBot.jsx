@@ -108,14 +108,14 @@ class ChatBot extends Component {
     const { recognitionEnable } = this.state;
     const { recognitionLang } = this.props;
 
-    if (recognitionEnable) {
-      this.recognition = new Recognition(
-        this.onRecognitionChange,
-        this.onRecognitionEnd,
-        this.onRecognitionStop,
-        recognitionLang
-      );
-    }
+//     if (recognitionEnable) {
+//       this.recognition = new Recognition(
+//         this.onRecognitionChange,
+//         this.onRecognitionEnd,
+//         this.onRecognitionStop,
+//         recognitionLang
+//       );
+//     }
 
     this.supportsScrollBehavior = 'scrollBehavior' in document.documentElement.style;
 
