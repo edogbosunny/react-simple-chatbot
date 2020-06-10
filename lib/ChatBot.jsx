@@ -164,12 +164,12 @@ class ChatBot extends Component {
     return state;
   }
 
-  componentWillUnmount() {
-    if (this.content) {
-      this.content.removeEventListener('DOMNodeInserted', this.onNodeInserted);
-      window.removeEventListener('resize', this.onResize);
-    }
-  }
+  // componentWillUnmount() {
+  //   if (this.content) {
+  //     this.content.removeEventListener('DOMNodeInserted', this.onNodeInserted);
+  //     window.removeEventListener('resize', this.onResize);
+  //   }
+  // }
 
   onNodeInserted = event => {
     const { currentTarget: target } = event;
