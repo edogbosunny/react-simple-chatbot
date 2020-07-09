@@ -29,7 +29,7 @@ class ChatBot extends Component {
     this.content = null;
     this.input = null;
 
-    this.supportsScrollBehavior = false;
+    this.supportsScrollBehavior = true;
 
     this.setContentRef = element => {
       this.content = element;
